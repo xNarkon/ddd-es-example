@@ -1,0 +1,10 @@
+imports:
+    - { resource: containers/basket.yaml }
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Landingi\SharedKernel\:
+        resource: '../src/SharedKernel/'

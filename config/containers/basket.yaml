@@ -1,0 +1,20 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Landingi\Basket\Application\:
+        resource: '../../src/Basket/Application/'
+
+    Landingi\Basket\Domain\:
+        resource: '../../src/Basket/Domain/'
+
+    Landingi\Basket\Infrastructure\:
+        resource: '../../src/Basket/Infrastructure'
+
+    Landingi\Basket\Framework\:
+        resource: '../../src/Basket/Framework'
+
+    Landingi\Basket\Framework\Controller\:
+        resource: '../../src/Basket/Framework/Controller/'
+        tags: [ 'controller.service_arguments' ]
